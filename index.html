@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>PHS Web Design</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body>
+        <div id="conteudo">
+            <header id="inicio">
+                
+                <nav><!--Fundo branco com borda azul-->
+                    <a href="#inicio" id="ini"><img src="http://phsdesign.esy.es/imagens/logomarca.png" max-width="150"></a>
+                   
+                    <div class="menu">
+                    <ul>
+                        <li><a href="#inicio" id="ini">Início</a></li>
+                        <li><a href="#sobre" id="linkSobre">Sobre</a></li>
+                        <li><a href="#contato" id="linkContato">Contato</a></li>
+                    </ul>
+                    </div>
+                    
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Menu</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#inicio" id="drop-ini">Início</a>
+                            <a href="#sobre" id="drop-Sobre">Sobre</a>
+                            <a href="#contato" id="drop-Contato">Contato</a>
+                            <a href="#" onclick="portugues()">Português</a>
+                            <a href="#" onclick="ingles()">English</a>
+                            <a href="#" onclick="espanhol()">Español</a>
+                        </div>
+                    </div>
+               
+                </nav>
+               
+                <div id="lang">
+                    <button type="button" onclick="portugues()" title="Português"><img src="http://phsdesign.esy.es/imagens/pt-BR.png" width="15" alt="Português" /></button>
+                    <button type="button" onclick="ingles()" title="English"><img src="http://phsdesign.esy.es/imagens/en-US.png" width="15" alt="Inglês" /></button>
+                    <button type="button" onclick="espanhol()" title="Español"><img src="http://phsdesign.esy.es/imagens/es.png" width="15" alt="Espanhol" /></button>
+                </div>
+                
+                <div id="cabecalho">
+                    <!--Fundo com uma imagem -->
+                    <h1 align="center">PHS Web Designer</h1>
+                </div>
+            </header>
+            
+            <!--Fundo branco-->
+            <div id="sobre" class="posicao main">
+                <h1 id="mudarSobre">Sobre</h1>
+                <p id="mudarPSobre">
+                    Lorem ipsum dolor sit amet , consectetur adipiscing elit. 
+                    Maecenas convallis viverra justo sed adipiscing. 
+                    Maecenas vitae arcu lectus. 
+                    Praesent eleifend sapien et consequat ultricies. 
+                    Donec varius , leo a condimentum porta , quam tortor lobortis metus , consectetur posuere enim metus vitae lorem. 
+                    In tempor gravida arcu in sollicitudin. 
+                    Nullam molestie , sem vitae volutpat porta , ligula tortor pretium diam , sed adipiscing magna massa ut nisl. 
+                    Pellentesque congue nisl vehicula leo tincidunt ultricies.
+                </p>
+            </div>
+            
+            <!--Background #E0FFFF -->
+            <div id="contato" class="posicao main">
+                <h1 id="mudarContato">Contato</h1>
+                <section>
+                    <aside id="cont">
+                        <p id="mudarCont">Entre em Contato</p>
+                        <img src="http://phsdesign.esy.es/imagens/whatsapp-icon.png" width="30"> (33)98838-2610<br>
+                        <a href="https://facebook.com/pedrohenriquedasilva100"><img src="http://phsdesign.esy.es/imagens/icone-facebook.png" width="30"> PHS Web Designer</a><br>
+                        <img src="http://phsdesign.esy.es/imagens/email-icone.png" width="30"> contato@phsdesign.esy.es
+                    </aside>
+                    
+                    <aside id="form">
+                        <p id="mudarForm">Formulário de Contato</p>
+                        <form action="enviar.php" method="post">
+                            <label id="nome">Nome</label><br>
+                            <input type="text" name="nome" class="txt" /><br>
+                            <label id="email">E-mail</label><br>
+                            <input type="email" name="email" class="txt" /><br>
+                            <label id="telefone">Telefone</label><br>
+                            <input type="tel" name="telefone" class="txt" /><br>
+                            <label id="assunto">Assunto</label><br>
+                            <input type="text" name="assunto" class="txt" /><br>
+                            <label id="mensagem">Mensagem</label><br>
+                            <textarea cols="50" rows="10" class="txt" name="mensagem" ></textarea><br>
+                            <input type="submit" value="Enviar" id="enviar" class="botao" name="botao" />
+                    </form>
+                    </aside>
+                    
+                </section>
+            </div>
+            
+            <!--Background #00FF66 -->
+            <div id="rodape" align="center" class="posicao">
+                <footer>
+                    PHS &copy; 2016
+                </footer>
+            </div>
+        </div>
+    </body>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>

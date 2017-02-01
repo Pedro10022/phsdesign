@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#lang{
+    position: fixed;
+    z-index: 10;
+    padding: 5px;
+}
+
+/*HEADER*/
+/*Menu*/
+#cabecalho {
+    background: url('http://phsdesign.esy.es//imagens/background3.jpg');
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    position: fixed;
+    color: #6368d7;
+    font-family: 'Montserrat', sans-serif;
+}
+#cabecalho h1{
+    font-size: 64px;
+    margin-top: 300px;
+}
+#cabecalho h1:hover{
+    text-shadow: 10px 10px 10px #cccccc;
+}
+
+nav {
+    width: 960px;
+    margin-left: 200px;
+    position: fixed;
+    z-index: 10;
+    top: 20px;
+}
+nav img{
+    float: left;
+}
+.menu{
+    float: right;
+}
+ul li{
+    list-style: none;
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    border-bottom: 3px solid blue; 
+}
+ul li a:hover{
+    color: blue;
+    border-bottom: 3px solid white;
+}
+/*Fim menu*/
+/*FIM HEADER*/
+
+.main {
+    padding: 5% 15%;
+    text-align: justify;
+    font-family: 'Montserrat',sans-serif;
+}
+.main h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+}
+.posicao {
+    position: relative  ;
+    top: 650px;
+}
+#sobre {
+    background: white;
+}
+
+/*sessao contato*/
+#contato {
+    background: #E0FFFF;
+}
+#cont{
+    float: right;
+    background: #fff;
+    padding: 3%;
+}
+#form{
+    width: 400px;
+    background: #fff;
+    padding: 3%;
+}
+aside p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/*Formulario*/
+.txt{
+    width: 100%;
+    padding: 7px;
+    margin: 7px 0;
+    background: #6368d7;
+    border: 0;
+}
+.botao{
+    width: 400px;
+    height: 35px;
+    background: #6368d7;
+    border: 0;
+}
+.botao:hover{
+    cursor: pointer;
+    color: #fff;
+    background: #957afd;
+}
+/*Fim formulario*/
+/*Fim contato*/
+
+#rodape {
+    background: #00FF66;
+    padding: 2% 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:960px){
+    nav img, .menu, #lang {
+        display: none;
+    }
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    #cabecalho{
+        height: 350px;
+    }
+    #cabecalho h1{
+        margin-top: 150px;
+    }
+    .posicao{
+        top: 350px;
+    }
+    #form, .botao{
+        width: 100%;
+        padding-right: 3%;
+    }
+    
+     /* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+    
+}
+@media(min-width:960px){
+    .main h1{
+        padding: 1% 0 5% 45%;
+    }
+    .dropbtn, .dropdown-content{
+        display: none;
+    }
+}
