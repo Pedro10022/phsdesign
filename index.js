@@ -20,12 +20,16 @@ function portugues(){
     document.getElementById("mudarContato").innerHTML = "Contato";
     
     //menu
-    document.getElementById("ini").innerHTML = "InÃ­cio";
+    document.getElementById("ini").innerHTML = "Início";
     document.getElementById("linkSobre").innerHTML = "Sobre";
     document.getElementById("linkContato").innerHTML = "Contato";
     
+    document.getElementById("drop-ini").innerHTML = "Início";
+    document.getElementById("drop-Sobre").innerHTML = "Sobre";
+    document.getElementById("drop-Contato").innerHTML = "Contato";
+    
     //titulos e paragrafos
-    document.getElementById("mudarForm").innerHTML = "FormulÃ¡rio de Contato";
+    document.getElementById("mudarForm").innerHTML = "Formulário de Contato";
     document.getElementById("mudarCont").innerHTML = "Entre em Contato";
     
     //formulario
@@ -48,6 +52,10 @@ function ingles(){
     document.getElementById("linkSobre").innerHTML = "About";
     document.getElementById("linkContato").innerHTML = "Contact";
     
+    document.getElementById("drop-ini").innerHTML = "Início";
+    document.getElementById("drop-Sobre").innerHTML = "Sobre";
+    document.getElementById("drop-Contato").innerHTML = "Contato";
+    
     //titulos e paragrafos
     document.getElementById("mudarForm").innerHTML = "Contact Form";
     document.getElementById("mudarCont").innerHTML = "Contact us";
@@ -63,13 +71,17 @@ function ingles(){
 
 function espanhol(){
     //titulos h1
-    document.getElementById("mudarSobre").innerHTML = "Sobre";
+    document.getElementById("mudarSobre").innerHTML = "Acerca de";
     document.getElementById("mudarContato").innerHTML = "Contacto";
     
     //menu
     document.getElementById("ini").innerHTML = "Inicio";
-    document.getElementById("linkSobre").innerHTML = "Sobre";
+    document.getElementById("linkSobre").innerHTML = "Acerca de";
     document.getElementById("linkContato").innerHTML = "Contacto";
+    
+    document.getElementById("drop-ini").innerHTML = "Início";
+    document.getElementById("drop-Sobre").innerHTML = "Acerca de";
+    document.getElementById("drop-Contato").innerHTML = "Contato";
     
     //titulos e paragrafos
     document.getElementById("mudarForm").innerHTML = "Formulario de Contacto";
@@ -83,6 +95,7 @@ function espanhol(){
     document.getElementById("mensagem").innerHTML = "Mensagem";
     document.getElementById("enviar").innerHTML = "Enviar";
 }
+
 //Fim Funções de idioma
 
 //Dropdown
