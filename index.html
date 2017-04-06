@@ -2,12 +2,16 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>PHS Web Design</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="shortcut icon" href="http://phsdesign.esy.es/imagens/logop.png">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+  <title>PHS Web Design</title>
   
 </head>
 
@@ -17,12 +21,13 @@
             <header id="inicio">
                 
                 <nav><!--Fundo branco com borda azul-->
-                    <a href="#inicio" id="ini"><img src="http://phsdesign.esy.es/imagens/logomarca.png" max-width="150"></a>
+                    <a href="#inicio" id="ini"><img src="http://phsdesign.esy.es/imagens/logomarca.png" max-width="150" alt="logomarca"></a>
                    
                     <div class="menu">
                     <ul>
                         <li><a href="#inicio" id="ini">Início</a></li>
                         <li><a href="#sobre" id="linkSobre">Sobre</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contato" id="linkContato">Contato</a></li>
                     </ul>
                     </div>
@@ -32,6 +37,7 @@
                         <div id="myDropdown" class="dropdown-content">
                             <a href="#inicio" id="drop-ini">Início</a>
                             <a href="#sobre" id="drop-Sobre">Sobre</a>
+                            <a href="#portfolio">Portfolio</a>
                             <a href="#contato" id="drop-Contato">Contato</a>
                             <a href="#" onclick="portugues()">Português</a>
                             <a href="#" onclick="ingles()">English</a>
@@ -42,9 +48,9 @@
                 </nav>
                
                 <div id="lang">
-                    <button type="button" onclick="portugues()" title="Português"><img src="http://phsdesign.esy.es/imagens/pt-BR.png" width="15" alt="Português" /></button>
-                    <button type="button" onclick="ingles()" title="English"><img src="http://phsdesign.esy.es/imagens/en-US.png" width="15" alt="Inglês" /></button>
-                    <button type="button" onclick="espanhol()" title="Español"><img src="http://phsdesign.esy.es/imagens/es.png" width="15" alt="Espanhol" /></button>
+                    <a onclick="portugues()" title="Português"><img src="http://phsdesign.esy.es/imagens/pt-BR.png" width="15" alt="Português" /></a>
+                    <a onclick="ingles()" title="English"><img src="http://phsdesign.esy.es/imagens/en-US.png" width="15" alt="Inglês" /></a>
+                    <a onclick="espanhol()" title="Español"><img src="http://phsdesign.esy.es/imagens/es.png" width="15" alt="Espanhol" /></a>
                 </div>
                 
                 <div id="cabecalho">
@@ -53,7 +59,6 @@
                 </div>
             </header>
             
-            <!--Fundo branco-->
             <div id="sobre" class="posicao main">
                 <h1 id="mudarSobre">Sobre</h1>
                 <p id="mudarPSobre">
@@ -67,42 +72,71 @@
                     Pellentesque congue nisl vehicula leo tincidunt ultricies.
                 </p>
             </div>
-            
-            <!--Background #E0FFFF -->
-            <div id="contato" class="posicao main">
-                <h1 id="mudarContato">Contato</h1>
-                <section>
-                    <aside id="cont">
-                        <p id="mudarCont">Entre em Contato</p>
-                        <img src="http://phsdesign.esy.es/imagens/whatsapp-icon.png" width="30"> (33)98838-2610<br>
-                        <a href="https://facebook.com/pedrohenriquedasilva100"><img src="http://phsdesign.esy.es/imagens/icone-facebook.png" width="30"> PHS Web Designer</a><br>
-                        <img src="http://phsdesign.esy.es/imagens/email-icone.png" width="30"> contato@phsdesign.esy.es
-                    </aside>
+          
+            <div id="portfolio" class="posicao">
+                <div class="container">
+                <h1 class="text-center text-primary">Portfolio</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <figure>
+                            <img alt="Primeira imagem" src="http://phsdesign.esy.es/imagens/background1.jpg">
+                            <h3 class="">Primeira Imagem</h3>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img alt="Segunda imagem" src="http://phsdesign.esy.es/imagens/background2.jpg">
+                            <h3 class="">Segunda Imagem</h3>
+                        </figure>
+                    </div>
+                    <div class="col-md-4">
+                        <figure>
+                            <img alt="Terceira imagem" src="http://phsdesign.esy.es/imagens/background3.jpg">
+                            <h3 class="">Terceira Imagem</h3>
+                        </figure>
+                    </div>
+                </div>
+                </div>
+            </div>
+          
+            <div id="contato" class="posicao">
+                <h1 id="mudarContato" class="text-center text-primary">Contato</h1>
+                
+                <div class="container">
+                   
+                  <div class="row">
                     
-                    <aside id="form">
-                        <p id="mudarForm">Formulário de Contato</p>
-                        <form action="enviar.php" method="post">
+                    <div id="form" class="col-md-8">
+                        <h3 id="mudarForm">Formul&aacute;rio de Contato</h3>
+                        <form action="" method="post">
                             <label id="nome">Nome</label><br>
-                            <input type="text" name="nome" class="txt" /><br>
+                            <input type="text" name="nome" class="form-control" /><br>
                             <label id="email">E-mail</label><br>
-                            <input type="email" name="email" class="txt" /><br>
+                            <input type="email" name="email" class="form-control" /><br>
                             <label id="telefone">Telefone</label><br>
-                            <input type="tel" name="telefone" class="txt" /><br>
+                            <input type="tel" name="telefone" class="form-control" /><br>
                             <label id="assunto">Assunto</label><br>
-                            <input type="text" name="assunto" class="txt" /><br>
+                            <input type="text" name="assunto" class="form-control" /><br>
                             <label id="mensagem">Mensagem</label><br>
-                            <textarea cols="50" rows="10" class="txt" name="mensagem" ></textarea><br>
-                            <input type="submit" value="Enviar" id="enviar" class="botao" name="botao" />
+                            <textarea cols="50" rows="10" class="form-control" ></textarea><br>
+                            <input type="submit" value="Enviar" id="enviar" class="botao btn btn-block btn-primary" />
                     </form>
-                    </aside>
-                    
-                </section>
+                    </div>
+                  
+                  <div id="cont" class="col-md-4">
+                        <h4 id="mudarCont">Entre em Contato</h4>
+                        <img src="imagens/whatsapp-icon.png" alt="ícone do whatsapp" width="30"> (33)98838-2610<br>
+                        <a href="https://facebook.com/pedrohenriquedasilva100"><img src="imagens/icone-facebook.png" alt="ícone do facebook" width="30"> PHS Web Designer</a><br>
+                        <img src="imagens/email-icone.png" alt="ícone de e-mail" width="30"> <i>contato@phsdesign.esy.es</i>
+                    </div>
+                  
+                </div>
+              </div>
             </div>
             
-            <!--Background #00FF66 -->
             <div id="rodape" align="center" class="posicao">
                 <footer>
-                    PHS &copy; 2016
+                    PHS &copy; 2016/2017
                 </footer>
             </div>
         </div>
